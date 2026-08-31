@@ -256,11 +256,9 @@
   function parallaxBackdrop() {
     if (!backdrop || reducedMotion) return;
     var y = window.scrollY || 0;
-    var blobs = backdrop.querySelectorAll(".blob");
-    blobs.forEach(function (blob) {
-      var depth = parseFloat(blob.getAttribute("data-depth")) || 20;
-      blob.style.transform = "translate3d(0," + (y * (depth / 100)).toFixed(1) + "px,0)";
-    });
+    // translate the whole backdrop so the CSS float animations on each blob
+    // (transform) keep running independently
+    backdrop.style.transform = "translate3d(0," + (y * 0.16).toFixed(1) + "px,0)";
     driftDots();
   }
 
@@ -448,6 +446,59 @@
       ".project-preview.is-visible{opacity:1;transform:translateY(0) scale(1);}" +
       ".project-preview img{width:100%;height:100%;object-fit:cover;}";
     document.head.appendChild(previewStyle);
+  }
+
+  /* ---------- Magnetic buttons (fine pointers only) ---------- */
+  if (!reducedMotion && finePointer) {
+    document.querySelectorAll(".btn").forEach(function (btn) {
+      btn.addEventListener("pointermove", function (e) {
+        var r = btn.getBoundingClientRect();
+        var x = (e.clientX - r.left) / r.width - 0.5;
+        var y = (e.clientY - r.top) / r.height - 0.5;
+        btn.style.transition = "transform 0.08s linear, background 0.25s, color 0.25s, border-color 0.25s, box-shadow 0.3s, filter 0.3s";
+        btn.style.transform = "translate(" + (x * 10).toFixed(2) + "px," + (y * 7).toFixed(2) + "px)";
+      });
+      btn.addEventListener("pointerleave", function () {
+        btn.style.transition = "";
+        btn.style.transform = "";
+      });
+    });
+  }
+
+  /* ---------- 3D tilt + cursor spotlight on project cards ---------- */
+  if (!reducedMotion && finePointer) {
+    document.querySelectorAll(".project").forEach(function (card) {
+      card.addEventListener("pointerenter", function () {
+        card.style.transition = "border-color 0.35s, box-shadow 0.45s, transform 0.18s ease-out";
+      });
+      card.addEventListener("pointermove", function (e) {
+        var r = card.getBoundingClientRect();
+        var px = (e.clientX - r.left) / r.width - 0.5;
+        var py = (e.clientY - r.top) / r.height - 0.5;
+        card.style.setProperty("--mx", ((px + 0.5) * 100).toFixed(1) + "%");
+        card.style.setProperty("--my", ((py + 0.5) * 100).toFixed(1) + "%");
+        card.style.transform =
+          "perspective(1100px) rotateX(" + (-py * 4.5).toFixed(2) + "deg) rotateY(" + (px * 5.5).toFixed(2) + "deg) translateY(-4px)";
+      });
+      card.addEventListener("pointerleave", function () {
+        card.style.transition = "";
+        card.style.transform = "";
+      });
+    });
+  }
+
+  /* ---------- Cinematic hero fade-out on scroll ---------- */
+  var heroInner = document.querySelector(".hero-inner");
+  var scrollCue = document.querySelector(".scroll-cue");
+  if (!reducedMotion && heroInner) {
+    window.addEventListener("scroll", throttle(function () {
+      var y = window.scrollY || 0;
+      if (y > window.innerHeight) return;
+      var p = Math.min(y / (window.innerHeight * 0.85), 1);
+      heroInner.style.opacity = (1 - p * 0.72).toFixed(3);
+      heroInner.style.transform = "translateY(" + (p * 70).toFixed(1) + "px) scale(" + (1 - p * 0.03).toFixed(3) + ")";
+      if (scrollCue) scrollCue.style.opacity = (1 - p).toFixed(3);
+    }, 16), { passive: true });
   }
 
   /* ---------- Profile-in-code: fake Python playground ---------- */

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark">
-  <meta name="theme-color" content="#0a0c11">
+  <meta name="theme-color" content="#070a13">
 
   <title>Alvian Bagus Wijaksono — Pelajar &amp; Pengembang Pemula di Lamongan</title>
   <meta name="description" content="Portfolio Alvian Bagus Wijaksono, siswa X-4 SMA Negeri 1 Babat di Lamongan. Menulis HTML, CSS, JavaScript, dan Python sambil belajar — proyek, proses belajar, dan cara menghubunginya.">
@@ -72,13 +72,17 @@
   <!-- progress bar -->
   <div class="progress" aria-hidden="true"></div>
 
-  <!-- fixed grid backdrop -->
+  <!-- fixed grid backdrop (slowly drifting) -->
   <div class="grid-bg" aria-hidden="true"></div>
 
-  <!-- keyboard / touch targets for the interactive backdrop (parallax dots) -->
+  <!-- subtle film grain over everything -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ambient floating blobs + parallax dots -->
   <div class="backdrop" aria-hidden="true">
-    <span class="blob" data-depth="18"></span>
-    <span class="blob" data-depth="34"></span>
+    <span class="blob blob-blue"></span>
+    <span class="blob blob-violet"></span>
+    <span class="blob blob-cyan"></span>
     <div class="dots"></div>
   </div>
 
@@ -145,10 +149,10 @@
           </span>
           <span class="line">
             <span class="stagger outline-word">Alvian</span>
-            <span class="stagger">&nbsp;Bagus</span>
+            <span class="stagger name-grad">&nbsp;Bagus</span>
           </span>
           <span class="line">
-            <span class="stagger">Wijaksono<span class="tick" aria-hidden="true">.</span></span>
+            <span class="stagger name-grad">Wijaksono</span><span class="tick stagger" aria-hidden="true">.</span>
           </span>
         </h1>
 
@@ -183,6 +187,36 @@
         <span class="scroll-cue-line"></span>
       </div>
     </section>
+
+    <!-- ============================= TECH MARQUEE ============================= -->
+    <div class="tech-marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span>HTML</span><i>✦</i>
+          <span>CSS</span><i>✦</i>
+          <span>JavaScript</span><i>✦</i>
+          <span>Python</span><i>✦</i>
+          <span>Kotlin</span><i>✦</i>
+          <span>Git</span><i>✦</i>
+          <span>GitHub Pages</span><i>✦</i>
+          <span>Gemini API</span><i>✦</i>
+          <span>Room Database</span><i>✦</i>
+          <span>VS Code</span><i>✦</i>
+        </div>
+        <div class="marquee-group">
+          <span>HTML</span><i>✦</i>
+          <span>CSS</span><i>✦</i>
+          <span>JavaScript</span><i>✦</i>
+          <span>Python</span><i>✦</i>
+          <span>Kotlin</span><i>✦</i>
+          <span>Git</span><i>✦</i>
+          <span>GitHub Pages</span><i>✦</i>
+          <span>Gemini API</span><i>✦</i>
+          <span>Room Database</span><i>✦</i>
+          <span>VS Code</span><i>✦</i>
+        </div>
+      </div>
+    </div>
 
     <!-- ============================= ABOUT ============================= -->
     <section class="section section-about" id="tentang" aria-labelledby="about-title">
@@ -368,7 +402,10 @@
 
         <div class="code-playground" data-reveal>
           <div class="code-toolbar">
-            <span class="code-file">profil.py</span>
+            <span class="code-file">
+              <span class="code-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              profil.py
+            </span>
             <button class="btn btn-small btn-solid code-run" type="button" data-cursor="link">
               <span class="play-icon" aria-hidden="true">▶</span>
               <span class="run-label">Run</span>
