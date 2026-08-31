@@ -4,44 +4,35 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark">
-  <meta name="theme-color" content="#070a13">
+  <meta name="theme-color" content="#080808">
 
-  <title>Alvian Bagus Wijaksono — Pelajar &amp; Pengembang Pemula di Lamongan</title>
-  <meta name="description" content="Portfolio Alvian Bagus Wijaksono, siswa X-4 SMA Negeri 1 Babat di Lamongan. Menulis HTML, CSS, JavaScript, dan Python sambil belajar — proyek, proses belajar, dan cara menghubunginya.">
+  <title>Alvian Bagus Wijaksono — Pelajar & Pengembang di Lamongan</title>
+  <meta name="description" content="Portfolio Alvian Bagus Wijaksono, siswa X-4 SMA Negeri 1 Babat, Lamongan. HTML, CSS, JavaScript, Python — proyek, proses belajar, dan kontak.">
   <meta name="author" content="Alvian Bagus Wijaksono">
   <meta name="robots" content="index, follow">
 
-  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Alvian Bagus Wijaksono">
-  <meta property="og:title" content="Alvian Bagus Wijaksono — Pelajar &amp; Pengembang Pemula di Lamongan">
-  <meta property="og:description" content="Kode pertama bukan soal sempurna — soal berani memulai. Portfolio siswa X-4 SMA Negeri 1 Babat: proyek, proses belajar, dan kontak.">
+  <meta property="og:title" content="Alvian Bagus Wijaksono — Pelajar & Pengembang">
+  <meta property="og:description" content="Kode pertama bukan soal sempurna — soal berani memulai. Portfolio siswa X-4 SMA Negeri 1 Babat.">
   <meta property="og:url" content="https://alvianbagus321-stack.github.io/Profile/">
   <meta property="og:image" content="https://alvianbagus321-stack.github.io/Profile/assets/og.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:locale" content="id_ID">
   <link rel="canonical" href="https://alvianbagus321-stack.github.io/Profile/">
 
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Alvian Bagus Wijaksono — Pelajar &amp; Pengembang Pemula">
-  <meta name="twitter:description" content="Kode pertama bukan soal sempurna — soal berani memulai. Portfolio siswa X-4 SMA Negeri 1 Babat.">
+  <meta name="twitter:title" content="Alvian Bagus Wijaksono — Pelajar & Pengembang Pemula">
+  <meta name="twitter:description" content="Kode pertama bukan soal sempurna — soal berani memulai.">
   <meta name="twitter:image" content="https://alvianbagus321-stack.github.io/Profile/assets/og.png">
 
-  <!-- Favicon -->
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="assets/favicon.png" type="image/png" sizes="64x64">
-  <link rel="apple-touch-icon" href="assets/favicon.png">
 
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="assets/css/style.css">
 
-  <!-- Structured data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -53,43 +44,33 @@
       "url": "https://github.com/alvianbagus321-stack",
       "email": "mailto:alvianbagus321@gmail.com",
       "knowsAbout": ["HTML", "CSS", "JavaScript", "Python"],
-      "affiliation": {
-        "@type": "EducationalOrganization",
-        "name": "SMA Negeri 1 Babat"
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Lamongan",
-        "addressRegion": "Jawa Timur",
-        "addressCountry": "ID"
-      }
+      "affiliation": {"@type": "EducationalOrganization","name": "SMA Negeri 1 Babat"},
+      "address": {"@type": "PostalAddress","addressLocality": "Lamongan","addressRegion": "Jawa Timur","addressCountry": "ID"}
     }
   }
   </script>
 </head>
 <body>
 
-  <!-- progress bar -->
   <div class="progress" aria-hidden="true"></div>
 
-  <!-- fixed grid backdrop (slowly drifting) -->
-  <div class="grid-bg" aria-hidden="true"></div>
-
-  <!-- subtle film grain over everything -->
-  <div class="grain" aria-hidden="true"></div>
-
-  <!-- ambient floating blobs + parallax dots -->
-  <div class="backdrop" aria-hidden="true">
-    <span class="blob blob-blue"></span>
-    <span class="blob blob-violet"></span>
-    <span class="blob blob-cyan"></span>
-    <div class="dots"></div>
+  <!-- NEW PROFESSIONAL BACKDROP -->
+  <div class="bg-root" aria-hidden="true">
+    <div class="bg-grid"></div>
+    <div class="bg-vignette"></div>
+    <div class="bg-noise"></div>
+    <div class="bg-parallax" id="bgParallax">
+      <span class="p-blob b1"></span>
+      <span class="p-blob b2"></span>
+      <span class="p-blob b3"></span>
+      <div class="p-lines"></div>
+      <div class="p-dots" id="pDots"></div>
+    </div>
   </div>
 
-  <!-- ============================= NAV ============================= -->
-  <header class="site-head">
+  <header class="site-head" id="siteHead">
     <div class="nav-wrap container">
-      <a class="brand" href="#top" data-cursor="link">
+      <a class="brand" href="#top">
         <span class="brand-mark" aria-hidden="true">A</span>
         <span class="brand-text">
           <strong>Alvian Bagus</strong>
@@ -98,88 +79,101 @@
       </a>
 
       <nav class="nav-links" aria-label="Navigasi utama">
-        <a href="#tentang" class="nav-item is-active" data-cursor="link">Tentang</a>
-        <a href="#skills" class="nav-item" data-cursor="link">Skill</a>
-        <a href="#kode" class="nav-item" data-cursor="link">Kode</a>
-        <a href="#proyek" class="nav-item" data-cursor="link">Proyek</a>
-        <a href="#perjalanan" class="nav-item" data-cursor="link">Perjalanan</a>
-        <a href="#galeri" class="nav-item" data-cursor="link">Galeri</a>
-        <a href="#kontak" class="btn btn-small btn-solid nav-cta" data-cursor="link">Kontak</a>
+        <a href="#tentang" class="nav-item is-active">Tentang</a>
+        <a href="#skills" class="nav-item">Skill</a>
+        <a href="#kode" class="nav-item">Kode</a>
+        <a href="#proyek" class="nav-item">Proyek</a>
+        <a href="#perjalanan" class="nav-item">Perjalanan</a>
+        <a href="#galeri" class="nav-item">Galeri</a>
+        <a href="#kontak" class="btn btn-small btn-solid nav-cta">Kontak</a>
       </nav>
 
-      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-mobile">
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-mobile" aria-label="Buka menu">
         <span class="menu-line"></span>
         <span class="menu-line"></span>
-        <span class="sr-only">Buka menu</span>
       </button>
     </div>
 
-    <!-- mobile panel -->
-    <div class="nav-panel" id="nav-mobile">
+    <div class="nav-panel" id="nav-mobile" aria-hidden="true">
       <nav class="nav-mobile" aria-label="Navigasi mobile">
-        <a href="#tentang" data-cursor="link">Tentang</a>
-        <a href="#skills" data-cursor="link">Skill</a>
-        <a href="#kode" data-cursor="link">Kode</a>
-        <a href="#proyek" data-cursor="link">Proyek</a>
-        <a href="#perjalanan" data-cursor="link">Perjalanan</a>
-        <a href="#galeri" data-cursor="link">Galeri</a>
-        <a href="#kontak" data-cursor="link">Kontak</a>
+        <a href="#tentang"><span>Tentang</span><i>→</i></a>
+        <a href="#skills"><span>Skill</span><i>→</i></a>
+        <a href="#kode"><span>Kode</span><i>→</i></a>
+        <a href="#proyek"><span>Proyek</span><i>→</i></a>
+        <a href="#perjalanan"><span>Perjalanan</span><i>→</i></a>
+        <a href="#galeri"><span>Galeri</span><i>→</i></a>
+        <a href="#kontak"><span>Kontak</span><i>→</i></a>
       </nav>
       <div class="nav-panel-foot">
         <span>SMA Negeri 1 Babat · X-4</span>
-        <span>Lamongan, Jawa Timur</span>
+        <span>Lamongan, Jawa Timur — <span class="live-dot"></span> Sedang belajar</span>
       </div>
     </div>
   </header>
 
   <main id="top">
 
-    <!-- ============================= HERO ============================= -->
+    <!-- HERO -->
     <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-inner">
-        <p class="hero-kicker">
-          <span class="hero-status" aria-hidden="true"></span>
-          Lamongan, Jawa Timur — Indonesia
-        </p>
+      <div class="hero-inner container">
+        <div class="hero-left">
+          <p class="hero-kicker">
+            <span class="hero-status" aria-hidden="true"></span>
+            Lamongan, Jawa Timur — Indonesia · <span id="liveClock">00:00</span> WIB
+          </p>
 
-        <h1 class="hero-title" id="hero-title">
-          <span class="line">
-            <span class="mark-line" aria-hidden="true"><span class="mark-rect"></span></span>
-            <span class="stagger">Halo, saya</span>
-          </span>
-          <span class="line">
-            <span class="stagger outline-word">Alvian</span>
-            <span class="stagger name-grad">&nbsp;Bagus</span>
-          </span>
-          <span class="line">
-            <span class="stagger name-grad">Wijaksono</span><span class="tick stagger" aria-hidden="true">.</span>
-          </span>
-        </h1>
+          <h1 class="hero-title" id="hero-title">
+            <span class="line"><span class="stagger">Halo, saya</span></span>
+            <span class="line"><span class="stagger strong">Alvian Bagus</span></span>
+            <span class="line"><span class="stagger strong">Wijaksono.</span></span>
+          </h1>
 
-        <p class="hero-tagline">Kode pertama bukan soal sempurna — soal berani memulai.</p>
+          <p class="hero-tagline">Kode pertama bukan soal sempurna — soal berani memulai.</p>
 
-        <p class="hero-sub">
-          Siswa <strong>X-4 · SMA Negeri 1 Babat</strong> yang belajar membangun di web dan Android.
-          Banyak hal masih baru, dan di situlah serunya: saya menulis HTML, CSS, JavaScript, dan
-          Python, lalu mendokumentasikan prosesnya — satu proyek, satu pelajaran.
-        </p>
+          <p class="hero-sub">
+            Siswa <strong>X-4 · SMA Negeri 1 Babat</strong> yang belajar membangun di web dan Android.
+            Banyak hal masih baru, dan di situlah serunya: saya menulis HTML, CSS, JavaScript, dan
+            Python, lalu mendokumentasikan prosesnya — satu proyek, satu pelajaran.
+          </p>
 
-        <div class="hero-actions">
-          <a class="btn btn-solid" href="#proyek" data-cursor="link">
-            Lihat Proyek
-            <span class="btn-arrow" aria-hidden="true">→</span>
-          </a>
-          <a class="btn btn-ghost" href="#tentang" data-cursor="link">
-            Tentang Saya
-            <span class="btn-arrow" aria-hidden="true">↘</span>
-          </a>
+          <div class="hero-actions">
+            <a class="btn btn-solid" href="#proyek">
+              Lihat Proyek
+              <span class="btn-arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="btn btn-ghost" href="#tentang">
+              Tentang Saya
+              <span class="btn-arrow" aria-hidden="true">↘</span>
+            </a>
+          </div>
+
+          <ul class="hero-meta" role="list">
+            <li><span class="k">Sekolah</span><span class="v">SMA Negeri 1 Babat</span></li>
+            <li><span class="k">Kelas</span><span class="v">X-4</span></li>
+            <li><span class="k">Fokus</span><span class="v">HTML · CSS · JS · Python</span></li>
+          </ul>
         </div>
 
-        <ul class="hero-meta" role="list">
-          <li><span class="k">Sekolah</span><span class="v">SMA Negeri 1 Babat</span></li>
-          <li><span class="k">Kelas</span><span class="v">X-4</span></li>
-          <li><span class="k">Skill</span><span class="v">HTML · CSS · JS · Python</span></li>
-        </ul>
+        <div class="hero-right" aria-hidden="true">
+          <div class="hero-card" id="heroCard">
+            <div class="card-top">
+              <span class="card-dots"><i></i><i></i><i></i></span>
+              <span class="card-path">~/portfolio/index.html</span>
+            </div>
+            <div class="card-body">
+              <div class="card-line"><span class="c-dim">01</span><span> status: <b>learning</b></span></div>
+              <div class="card-line"><span class="c-dim">02</span><span> location: lamongan, ID</span></div>
+              <div class="card-line"><span class="c-dim">03</span><span> stack: web + android</span></div>
+              <div class="card-line"><span class="c-dim">04</span><span> motto: build in public</span></div>
+              <div class="card-line typing"><span class="c-dim">05</span><span id="typingText">_</span></div>
+            </div>
+            <div class="card-foot">
+              <span>drag → parallax</span>
+              <span class="card-cursor">■</span>
+            </div>
+          </div>
+          <div class="hero-orb"></div>
+        </div>
       </div>
 
       <div class="scroll-cue" aria-hidden="true">
@@ -188,54 +182,35 @@
       </div>
     </section>
 
-    <!-- ============================= TECH MARQUEE ============================= -->
+    <!-- MARQUEE -->
     <div class="tech-marquee" aria-hidden="true">
       <div class="marquee-track">
         <div class="marquee-group">
-          <span>HTML</span><i>✦</i>
-          <span>CSS</span><i>✦</i>
-          <span>JavaScript</span><i>✦</i>
-          <span>Python</span><i>✦</i>
-          <span>Kotlin</span><i>✦</i>
-          <span>Git</span><i>✦</i>
-          <span>GitHub Pages</span><i>✦</i>
-          <span>Gemini API</span><i>✦</i>
-          <span>Room Database</span><i>✦</i>
-          <span>VS Code</span><i>✦</i>
+          <span>HTML</span><i>·</i><span>CSS</span><i>·</i><span>JavaScript</span><i>·</i><span>Python</span><i>·</i><span>Kotlin</span><i>·</i><span>Git</span><i>·</i><span>GitHub Pages</span><i>·</i><span>Gemini API</span><i>·</i><span>Room DB</span><i>·</i><span>VS Code</span><i>·</i>
         </div>
-        <div class="marquee-group">
-          <span>HTML</span><i>✦</i>
-          <span>CSS</span><i>✦</i>
-          <span>JavaScript</span><i>✦</i>
-          <span>Python</span><i>✦</i>
-          <span>Kotlin</span><i>✦</i>
-          <span>Git</span><i>✦</i>
-          <span>GitHub Pages</span><i>✦</i>
-          <span>Gemini API</span><i>✦</i>
-          <span>Room Database</span><i>✦</i>
-          <span>VS Code</span><i>✦</i>
+        <div class="marquee-group" aria-hidden="true">
+          <span>HTML</span><i>·</i><span>CSS</span><i>·</i><span>JavaScript</span><i>·</i><span>Python</span><i>·</i><span>Kotlin</span><i>·</i><span>Git</span><i>·</i><span>GitHub Pages</span><i>·</i><span>Gemini API</span><i>·</i><span>Room DB</span><i>·</i><span>VS Code</span><i>·</i>
         </div>
       </div>
     </div>
 
-    <!-- ============================= ABOUT ============================= -->
+    <!-- ABOUT -->
     <section class="section section-about" id="tentang" aria-labelledby="about-title">
       <div class="container">
         <header class="section-head" data-reveal>
-          <p class="section-no">01</p>
+          <p class="section-no">01 / Tentang</p>
           <h2 class="section-title" id="about-title">
-            <span class="stagger">Tentang</span>
-            <span class="stagger outline-word">Saya</span>
+            <span class="stagger">Bukan programmer</span>
+            <span class="stagger">hebat. Seorang</span>
+            <span class="stagger">siswa yang</span>
+            <span class="stagger">tertarik.</span>
           </h2>
-          <p class="section-lead">Bukan programmer hebat. Seorang siswa yang benar-benar tertarik — dan sedang membangun kebiasaan.</p>
         </header>
 
         <div class="about-grid">
           <div class="about-main" data-reveal>
             <p class="about-big">
-              Saya suka dua hal: <em>coding</em> dan <em>membaca</em>. Biasanya keduanya saling
-              meminjam — satu bab buku tentang cara berpikir, satu malam men-debug fungsi yang
-              keras kepala.
+              Saya suka dua hal: <em>coding</em> dan <em>membaca</em>. Satu bab buku tentang cara berpikir, satu malam men-debug fungsi yang keras kepala.
             </p>
             <p>
               Saat ini saya siswa kelas X-4 di SMA Negeri 1 Babat, Lamongan. Di luar jam sekolah,
@@ -244,353 +219,226 @@
               adalah jejak dari proses itu — termasuk yang belum selesai.
             </p>
             <p>
-              Saya tidak berpura-pura sudah mahir. Yang jujur: level saya masih <em>dasar</em> di
-              hampir semua hal. Tapi setiap baris yang saya pahami hari ini tidak saya pahami
-              kemarin — dan itu cukup untuk terus maju.
+              Saya tidak berpura-pura sudah mahir. Level saya masih <em>dasar</em> di hampir semua hal.
+              Tapi setiap baris yang saya pahami hari ini tidak saya pahami kemarin — dan itu cukup untuk terus maju.
             </p>
 
             <dl class="fact-list">
               <div class="fact"><dt>Nama</dt><dd>Alvian Bagus Wijaksono</dd></div>
-              <div class="fact"><dt>Sekolah</dt><dd>SMA Negeri 1 Babat (SMABA)</dd></div>
+              <div class="fact"><dt>Sekolah</dt><dd>SMA Negeri 1 Babat</dd></div>
               <div class="fact"><dt>Kelas</dt><dd>X-4 / 10-4</dd></div>
-              <div class="fact"><dt>Lokasi</dt><dd>Lamongan, Jawa Timur, Indonesia</dd></div>
+              <div class="fact"><dt>Lokasi</dt><dd>Lamongan, Jawa Timur</dd></div>
               <div class="fact"><dt>Minat</dt><dd>Coding · Membaca</dd></div>
-              <div class="fact"><dt>Level</dt><dd>Pemula — dan sedang belajar</dd></div>
+              <div class="fact"><dt>Level</dt><dd>Pemula — sedang belajar</dd></div>
             </dl>
           </div>
 
-          <aside class="about-side" data-reveal data-parallax>
+          <aside class="about-side" data-reveal>
             <div class="aside-block">
               <h3>Sekarang saya sedang…</h3>
-              <p>
-                Mengembangkan mode <em>offline</em> untuk aplikasi AI — supaya AI tetap bisa
-                dipakai tanpa koneksi internet, lewat model yang berjalan di perangkat.
-              </p>
+              <p>Mengembangkan mode <em>offline</em> untuk aplikasi AI — supaya AI tetap bisa dipakai tanpa koneksi internet.</p>
               <span class="aside-badge">Dalam pengerjaan</span>
             </div>
-
             <div class="aside-block aside-quote">
               <p class="quote-mark" aria-hidden="true">“</p>
-              <p class="quote-text">
-                Nggak apa-apa kalau project-nya kecil. Yang penting idenya jalan, dan saya paham
-                kenapa.
-              </p>
+              <p class="quote-text">Nggak apa-apa kalau project-nya kecil. Yang penting idenya jalan, dan saya paham kenapa.</p>
               <p class="quote-by">— catatan pribadi, 2026</p>
             </div>
-
             <div class="aside-block">
               <h3>Di luar laptop</h3>
-              <p>
-                Membaca buku, scroll GitHub melihat cara orang lain menyelesaikan masalah yang
-                sama, dan sesekali mengerjakan proyek bersama teman-teman kelas X-4.
-              </p>
+              <p>Membaca buku, scroll GitHub melihat cara orang lain menyelesaikan masalah yang sama, dan mengerjakan proyek bersama teman-teman kelas X-4.</p>
             </div>
           </aside>
         </div>
       </div>
     </section>
 
-    <!-- ============================= SKILLS ============================= -->
+    <!-- SKILLS -->
     <section class="section section-skills" id="skills" aria-labelledby="skills-title">
       <div class="container">
         <header class="section-head" data-reveal>
-          <p class="section-no">02</p>
+          <p class="section-no">02 / Skill</p>
           <h2 class="section-title" id="skills-title">
-            <span class="stagger">Yang</span>
-            <span class="stagger outline-word">Saya</span>
-            <span class="stagger">Pelajari</span>
+            <span class="stagger">Yang saya</span>
+            <span class="stagger">pelajari.</span>
           </h2>
-          <p class="section-lead">Empat teknologi yang sedang saya dalami. Levelnya saya jujur-ke-diri — bukan angka yang dibuat-buat.</p>
+          <p class="section-lead">Empat teknologi yang sedang saya dalami. Levelnya jujur — bukan angka yang dibuat-buat.</p>
         </header>
 
         <ol class="skill-list">
-          <li class="skill-row" data-reveal data-cursor="view">
+          <li class="skill-row" data-reveal>
             <span class="skill-idx">01</span>
             <div class="skill-main">
               <div class="skill-head">
-                <h3 class="skill-name" data-hover-text="HyperText Markup Language">HTML</h3>
-                <span class="skill-level level-dasar">Dasar</span>
+                <h3 class="skill-name">HTML</h3>
+                <span class="skill-level">Dasar</span>
               </div>
               <p class="skill-desc">Struktur halaman. Tag, semantic elements, dan form — fondasi yang saya pakai di hampir semua proyek web.</p>
             </div>
-            <div class="skill-track" aria-hidden="true">
-              <span class="track-seg seg-dasar"></span>
-              <span class="track-seg seg-dasar"></span>
-              <span class="track-seg seg-off"></span>
-              <span class="track-seg seg-off"></span>
-              <span class="track-seg seg-off"></span>
-            </div>
+            <div class="skill-track" aria-hidden="true"><span class="track-seg on"></span><span class="track-seg on"></span><span class="track-seg"></span><span class="track-seg"></span><span class="track-seg"></span></div>
           </li>
-
-          <li class="skill-row" data-reveal data-cursor="view">
+          <li class="skill-row" data-reveal>
             <span class="skill-idx">02</span>
             <div class="skill-main">
               <div class="skill-head">
-                <h3 class="skill-name" data-hover-text="Cascading Style Sheets">CSS</h3>
-                <span class="skill-level level-dasar">Dasar</span>
+                <h3 class="skill-name">CSS</h3>
+                <span class="skill-level">Dasar</span>
               </div>
-              <p class="skill-desc">Layout, warna, dan tampilan. Sedang berlatih membuat desain yang bersih tanpa framework — seperti halaman ini.</p>
+              <p class="skill-desc">Layout, warna, dan tampilan. Sedang berlatih membuat desain yang bersih tanpa framework.</p>
             </div>
-            <div class="skill-track" aria-hidden="true">
-              <span class="track-seg seg-dasar"></span>
-              <span class="track-seg seg-dasar"></span>
-              <span class="track-seg seg-off"></span>
-              <span class="track-seg seg-off"></span>
-              <span class="track-seg seg-off"></span>
-            </div>
+            <div class="skill-track" aria-hidden="true"><span class="track-seg on"></span><span class="track-seg on"></span><span class="track-seg"></span><span class="track-seg"></span><span class="track-seg"></span></div>
           </li>
-
-          <li class="skill-row" data-reveal data-cursor="view">
+          <li class="skill-row" data-reveal>
             <span class="skill-idx">03</span>
             <div class="skill-main">
               <div class="skill-head">
-                <h3 class="skill-name" data-hover-text="JavaScript">JavaScript</h3>
-                <span class="skill-level level-dasar">Dasar</span>
+                <h3 class="skill-name">JavaScript</h3>
+                <span class="skill-level">Dasar</span>
               </div>
-              <p class="skill-desc">Interaksi di browser — tombol, animasi, dan logika kecil. Masih banyak yang harus dipelajari, satu fungsi demi satu fungsi.</p>
+              <p class="skill-desc">Interaksi di browser — tombol, animasi, dan logika kecil. Masih banyak yang harus dipelajari.</p>
             </div>
-            <div class="skill-track" aria-hidden="true">
-              <span class="track-seg seg-dasar"></span>
-              <span class="track-seg seg-off"></span>
-              <span class="track-seg seg-off"></span>
-              <span class="track-seg seg-off"></span>
-              <span class="track-seg seg-off"></span>
-            </div>
+            <div class="skill-track" aria-hidden="true"><span class="track-seg on"></span><span class="track-seg"></span><span class="track-seg"></span><span class="track-seg"></span><span class="track-seg"></span></div>
           </li>
-
-          <li class="skill-row" data-reveal data-cursor="view">
+          <li class="skill-row" data-reveal>
             <span class="skill-idx">04</span>
             <div class="skill-main">
               <div class="skill-head">
-                <h3 class="skill-name" data-hover-text="Python">Python</h3>
-                <span class="skill-level level-dasar">Dasar</span>
+                <h3 class="skill-name">Python</h3>
+                <span class="skill-level">Dasar</span>
               </div>
-              <p class="skill-desc">Bahasa pertama yang serius saya pelajari. Sekarang dipakai untuk skrip kecil dan latihan logika — target berikutnya: proyek nyata.</p>
+              <p class="skill-desc">Bahasa pertama yang serius saya pelajari. Untuk skrip kecil dan latihan logika.</p>
             </div>
-            <div class="skill-track" aria-hidden="true">
-              <span class="track-seg seg-dasar"></span>
-              <span class="track-seg seg-off"></span>
-              <span class="track-seg seg-off"></span>
-              <span class="track-seg seg-off"></span>
-              <span class="track-seg seg-off"></span>
-            </div>
+            <div class="skill-track" aria-hidden="true"><span class="track-seg on"></span><span class="track-seg"></span><span class="track-seg"></span><span class="track-seg"></span><span class="track-seg"></span></div>
           </li>
         </ol>
-
-        <p class="skills-note" data-reveal>
-          * Level <em>Dasar</em>: paham sintaks dan bisa menyelesaikan masalah kecil.
-          <em>Menengah</em>: bisa membangun proyek mandiri.
-          <em>Mahir</em>: percaya diri mengajarkan ke orang lain.
-        </p>
       </div>
     </section>
 
-    <!-- ============================= PROFILE IN CODE ============================= -->
+    <!-- CODE -->
     <section class="section section-code" id="kode" aria-labelledby="code-title">
       <div class="container">
         <header class="section-head" data-reveal>
-          <p class="section-no">03</p>
+          <p class="section-no">03 / Kode</p>
           <h2 class="section-title" id="code-title">
-            <span class="stagger">Profil</span>
-            <span class="stagger outline-word">dalam</span>
-            <span class="stagger">Kode</span>
+            <span class="stagger">Profil dalam</span>
+            <span class="stagger">kode.</span>
           </h2>
-          <p class="section-lead">
-            Siapa saya, ditulis sebagai kode Python. Tekan tombol <em>Run</em> dan lihat hasilnya.
-          </p>
+          <p class="section-lead">Edit kodenya. Tekan Run. Coba ketik <code>py run game</code> untuk easter egg.</p>
         </header>
 
         <div class="code-playground" data-reveal>
           <div class="code-toolbar">
-            <span class="code-file">
-              <span class="code-dots" aria-hidden="true"><i></i><i></i><i></i></span>
-              profil.py
-            </span>
-            <button class="btn btn-small btn-solid code-run" type="button" data-cursor="link">
-              <span class="play-icon" aria-hidden="true">▶</span>
-              <span class="run-label">Run</span>
-            </button>
+            <span class="code-file"><span class="code-dots"><i></i><i></i><i></i></span> profil.py — editable</span>
+            <div class="code-actions">
+              <span class="code-hint">hint: py run game</span>
+              <button class="btn btn-small btn-solid code-run" type="button"><span class="play-icon">▶</span><span class="run-label">Run</span></button>
+            </div>
           </div>
-
-          <pre class="code-editor" aria-label="Kode Python profil"><code><span class="py-key">profil</span> = {
-    <span class="py-key">"nama"</span>:      <span class="py-str">"Alvian Bagus Wijaksono"</span>,
-    <span class="py-key">"kelas"</span>:     <span class="py-str">"X-4"</span>,
-    <span class="py-key">"sekolah"</span>:   <span class="py-str">"SMA Negeri 1 Babat"</span>,
-    <span class="py-key">"kontak"</span>:    <span class="py-str">"0857-2729-8747"</span>,
-    <span class="py-key">"hobi"</span>:      <span class="py-str">"membaca"</span>,
-    <span class="py-key">"cita_cita"</span>: <span class="py-str">"web development"</span>,
+          <textarea class="code-editor" id="codeEditor" spellcheck="false" aria-label="Editor Python">profil = {
+    "nama":      "Alvian Bagus Wijaksono",
+    "kelas":     "X-4",
+    "sekolah":   "SMA Negeri 1 Babat",
+    "kontak":    "0857-2729-8747",
+    "hobi":      "membaca",
+    "cita_cita": "web development",
 }
 
-<span class="py-fn">for</span> kunci, nilai <span class="py-fn">in</span> profil.items():
-    <span class="py-fn">print</span>(f"{kunci}: {nilai}")</code></pre>
-
-          <div class="code-output" aria-live="polite" hidden>
+for kunci, nilai in profil.items():
+    print(f"{kunci}: {nilai}")</textarea>
+          <div class="code-output" id="codeOutput" aria-live="polite" hidden>
             <span class="output-label">Output</span>
-            <pre></pre>
+            <pre id="codeOutputPre"></pre>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ============================= PROJECTS ============================= -->
+    <!-- PROJECTS -->
     <section class="section section-projects" id="proyek" aria-labelledby="projects-title">
       <div class="container">
         <header class="section-head" data-reveal>
-          <p class="section-no">04</p>
+          <p class="section-no">04 / Proyek</p>
           <h2 class="section-title" id="projects-title">
             <span class="stagger">Proyek</span>
-            <span class="stagger outline-word">Pilihan</span>
+            <span class="stagger">pilihan.</span>
           </h2>
-          <p class="section-lead">Beberapa hal yang saya bangun dan unggah ke GitHub. Ada yang sudah bisa dipakai, ada yang masih <em>dalam pengembangan</em> — keduanya saya pajang apa adanya.</p>
+          <p class="section-lead">Beberapa hal yang saya bangun dan unggah ke GitHub. Ada yang sudah bisa dipakai, ada yang masih dalam pengembangan.</p>
         </header>
 
         <div class="project-list">
-
-          <!-- FEATURED: Offline AI Mode -->
-          <article class="project project-featured" data-reveal data-hover-preview="assets/screenshots/ai-mode.svg">
+          <article class="project project-featured" data-reveal data-tilt>
             <div class="project-cover">
-              <img src="assets/screenshots/ai-mode.svg" alt="Antarmuka chat Ai-code — mode offline AI" width="1200" height="700" loading="lazy" decoding="async">
-              <span class="cover-caption">Pratinjau antarmuka proyek</span>
+              <img src="assets/screenshots/ai-mode.svg" alt="Antarmuka chat Ai-code — mode offline AI" width="1200" height="700" loading="lazy">
+              <span class="cover-caption">Pratinjau antarmuka</span>
             </div>
             <div class="project-body">
-              <div class="project-top">
-                <span class="project-no">01</span>
-                <span class="badge badge-dev">Dalam Pengembangan</span>
-              </div>
+              <div class="project-top"><span class="project-no">01</span><span class="badge badge-dev">Dalam Pengembangan</span></div>
               <h3 class="project-name">Offline AI Mode</h3>
-              <p class="project-desc">
-                Mode offline untuk aplikasi AI — supaya asisten AI tetap bisa menjawab tanpa koneksi
-                internet, dengan model yang berjalan langsung di perangkat. Versi yang mendukung
-                model GGUF dan BIN sedang dikerjakan di repositori terpisah.
-              </p>
-              <ul class="tag-list" role="list" aria-label="Teknologi proyek">
-                <li>Kotlin</li>
-                <li>Gemini API</li>
-              </ul>
+              <p class="project-desc">Mode offline untuk aplikasi AI — supaya asisten AI tetap bisa menjawab tanpa koneksi internet, dengan model yang berjalan langsung di perangkat.</p>
+              <ul class="tag-list"><li>Kotlin</li><li>Gemini API</li></ul>
               <div class="project-links">
-                <a class="btn btn-small btn-ghost" href="https://github.com/alvianbagus321-stack/Ai-code" target="_blank" rel="noopener" data-cursor="link">
-                  GitHub <span aria-hidden="true">↗</span>
-                </a>
-                <span class="link-hint">Repositori terkait: Offline-Ai-version</span>
+                <a class="btn btn-small btn-ghost" href="https://github.com/alvianbagus321-stack/Ai-code" target="_blank" rel="noopener">GitHub ↗</a>
               </div>
             </div>
           </article>
 
-          <!-- AI Camera -->
-          <article class="project project-split" data-reveal data-hover-preview="assets/screenshots/camera-ai.svg">
-            <div class="project-cover">
-              <img src="assets/screenshots/camera-ai.svg" alt="Ilustrasi antarmuka kamera dengan kotak deteksi AI" width="1200" height="700" loading="lazy" decoding="async">
-            </div>
+          <article class="project project-split" data-reveal data-tilt>
+            <div class="project-cover"><img src="assets/screenshots/camera-ai.svg" alt="Ilustrasi antarmuka kamera dengan kotak deteksi AI" width="1200" height="700" loading="lazy"></div>
             <div class="project-body">
-              <div class="project-top">
-                <span class="project-no">02</span>
-                <span class="badge badge-live">Tersedia</span>
-              </div>
+              <div class="project-top"><span class="project-no">02</span><span class="badge badge-live">Tersedia</span></div>
               <h3 class="project-name">AI Camera</h3>
-              <p class="project-desc">
-                Aplikasi kamera dengan mesin AI untuk mengenali barang. Foto barangnya, dan aplikasi
-                mencari datanya — dari inventaris lokal maupun lewat pencarian online. Versi kedua
-                sedang disiapkan.
-              </p>
-              <ul class="tag-list" role="list" aria-label="Teknologi proyek">
-                <li>Kotlin</li>
-                <li>Room Database</li>
-              </ul>
+              <p class="project-desc">Aplikasi kamera dengan mesin AI untuk mengenali barang. Foto barangnya, dan aplikasi mencari datanya — dari inventaris lokal maupun lewat pencarian online.</p>
+              <ul class="tag-list"><li>Kotlin</li><li>Room Database</li></ul>
               <div class="project-links">
-                <a class="btn btn-small btn-ghost" href="https://github.com/alvianbagus321-stack/Camera-ai" target="_blank" rel="noopener" data-cursor="link">
-                  GitHub <span aria-hidden="true">↗</span>
-                </a>
-                <a class="btn btn-small btn-ghost" href="https://github.com/alvianbagus321-stack/Camera-ai-v2" target="_blank" rel="noopener" data-cursor="link">
-                  v2 — Dalam Pengembangan <span aria-hidden="true">↗</span>
-                </a>
+                <a class="btn btn-small btn-ghost" href="https://github.com/alvianbagus321-stack/Camera-ai" target="_blank" rel="noopener">GitHub ↗</a>
+                <a class="btn btn-small btn-ghost" href="https://github.com/alvianbagus321-stack/Camera-ai-v2" target="_blank" rel="noopener">v2 — Dev ↗</a>
               </div>
             </div>
           </article>
 
-          <!-- Items Recognition -->
-          <article class="project project-split" data-reveal data-hover-preview="assets/screenshots/items-recon.svg">
-            <div class="project-cover">
-              <img src="assets/screenshots/items-recon.svg" alt="Tampilan inventaris aplikasi Items Recognition" width="1200" height="700" loading="lazy" decoding="async">
-            </div>
+          <article class="project project-split" data-reveal data-tilt>
+            <div class="project-cover"><img src="assets/screenshots/items-recon.svg" alt="Tampilan inventaris aplikasi Items Recognition" width="1200" height="700" loading="lazy"></div>
             <div class="project-body">
-              <div class="project-top">
-                <span class="project-no">03</span>
-                <span class="badge badge-live">Tersedia</span>
-              </div>
+              <div class="project-top"><span class="project-no">03</span><span class="badge badge-live">Tersedia</span></div>
               <h3 class="project-name">Items Recognition</h3>
-              <p class="project-desc">
-                Aplikasi untuk mengenali barang yang sudah tersimpan di data, lengkap dengan harga
-                dan deskripsi. Data tersimpan lokal di perangkat, dan mode online bisa mencarikan
-                harga dari marketplace.
-              </p>
-              <ul class="tag-list" role="list" aria-label="Teknologi proyek">
-                <li>Kotlin</li>
-                <li>Gemini API</li>
-              </ul>
+              <p class="project-desc">Aplikasi untuk mengenali barang yang sudah tersimpan di data, lengkap dengan harga dan deskripsi. Data tersimpan lokal di perangkat.</p>
+              <ul class="tag-list"><li>Kotlin</li><li>Gemini API</li></ul>
               <div class="project-links">
-                <a class="btn btn-small btn-ghost" href="https://github.com/alvianbagus321-stack/Items-reconigtion-" target="_blank" rel="noopener" data-cursor="link">
-                  GitHub <span aria-hidden="true">↗</span>
-                </a>
-                <a class="btn btn-small btn-solid" href="#galeri" data-cursor="link">
-                  Lihat Tangkapan Layar <span aria-hidden="true">→</span>
-                </a>
+                <a class="btn btn-small btn-ghost" href="https://github.com/alvianbagus321-stack/Items-reconigtion-" target="_blank" rel="noopener">GitHub ↗</a>
+                <a class="btn btn-small btn-solid" href="#galeri">Lihat Screenshot →</a>
               </div>
             </div>
           </article>
 
-          <!-- Class Bazar Web -->
-          <article class="project project-featured project-web" data-reveal data-hover-preview="assets/screenshots/bazar-web.svg">
-            <div class="project-cover">
-              <img src="assets/screenshots/bazar-web.svg" alt="Tampilan situs pemesanan Bazar Jogja Kelas X-4" width="1200" height="700" loading="lazy" decoding="async">
-            </div>
+          <article class="project project-featured" data-reveal data-tilt>
+            <div class="project-cover"><img src="assets/screenshots/bazar-web.svg" alt="Tampilan situs pemesanan Bazar Jogja Kelas X-4" width="1200" height="700" loading="lazy"></div>
             <div class="project-body">
-              <div class="project-top">
-                <span class="project-no">04</span>
-                <span class="badge badge-live">Live di GitHub Pages</span>
-              </div>
+              <div class="project-top"><span class="project-no">04</span><span class="badge badge-live">Live di GitHub Pages</span></div>
               <h3 class="project-name">Bazar X-4 — Web Kelas</h3>
-              <p class="project-desc">
-                Situs pemesanan untuk bazar kelas X-4 SMA Negeri 1 Babat. Menunya lengkap dengan
-                keranjang, lalu pesanan dirangkum otomatis dan diteruskan ke WhatsApp — tanpa perlu
-                ketik ulang.
-              </p>
-              <ul class="tag-list" role="list" aria-label="Teknologi proyek">
-                <li>HTML</li>
-                <li>JavaScript</li>
-              </ul>
+              <p class="project-desc">Situs pemesanan untuk bazar kelas X-4 SMA Negeri 1 Babat. Menunya lengkap dengan keranjang, lalu pesanan dirangkum otomatis dan diteruskan ke WhatsApp.</p>
+              <ul class="tag-list"><li>HTML</li><li>JavaScript</li></ul>
               <div class="project-links">
-                <a class="btn btn-small btn-ghost" href="https://github.com/alvianbagus321-stack/Bazar-X-4-web" target="_blank" rel="noopener" data-cursor="link">
-                  GitHub <span aria-hidden="true">↗</span>
-                </a>
-                <a class="btn btn-small btn-solid" href="https://alvianbagus321-stack.github.io/Bazar-X-4-web/" target="_blank" rel="noopener" data-cursor="link">
-                  Kunjungi Situs <span aria-hidden="true">↗</span>
-                </a>
+                <a class="btn btn-small btn-ghost" href="https://github.com/alvianbagus321-stack/Bazar-X-4-web" target="_blank" rel="noopener">GitHub ↗</a>
+                <a class="btn btn-small btn-solid" href="https://alvianbagus321-stack.github.io/Bazar-X-4-web/" target="_blank" rel="noopener">Kunjungi Situs ↗</a>
               </div>
             </div>
           </article>
         </div>
 
         <div class="projects-more" data-reveal>
-          <p>
-            Proyek lain — eksperimen, latihan, dan setengah jalan — bisa dilihat di GitHub saya.
-          </p>
-          <a class="btn btn-ghost" href="https://github.com/alvianbagus321-stack?tab=repositories" target="_blank" rel="noopener" data-cursor="link">
-            Semua Repositori <span aria-hidden="true">↗</span>
-          </a>
+          <p>Proyek lain — eksperimen, latihan, dan setengah jalan — bisa dilihat di GitHub saya.</p>
+          <a class="btn btn-ghost" href="https://github.com/alvianbagus321-stack?tab=repositories" target="_blank" rel="noopener">Semua Repositori ↗</a>
         </div>
       </div>
     </section>
 
-    <!-- ============================= LEARNING JOURNEY ============================= -->
+    <!-- JOURNEY -->
     <section class="section section-journey" id="perjalanan" aria-labelledby="journey-title">
       <div class="container">
         <header class="section-head" data-reveal>
-          <p class="section-no">05</p>
-          <h2 class="section-title" id="journey-title">
-            <span class="stagger">Perjalanan</span>
-            <span class="stagger outline-word">Belajar</span>
-          </h2>
-          <p class="section-lead">Garis waktu jujur — titik di mana sesuatu mulai masuk akal. Tidak ada loncatan, hanya proses.</p>
+          <p class="section-no">05 / Perjalanan</p>
+          <h2 class="section-title" id="journey-title"><span class="stagger">Perjalanan</span><span class="stagger">belajar.</span></h2>
+          <p class="section-lead">Garis waktu jujur — titik di mana sesuatu mulai masuk akal.</p>
         </header>
 
         <div class="timeline-wrap">
@@ -598,239 +446,153 @@
             <span class="year-num">2026</span>
             <span class="year-note">Tahun pertama yang produktif — berani unggah karya, bukan cuma latihan.</span>
           </div>
-
           <ol class="timeline">
-            <li class="tl-item" data-reveal>
-              <span class="tl-dot" aria-hidden="true"></span>
-              <div class="tl-card">
-                <p class="tl-date">Mei 2026</p>
-                <h3 class="tl-title">Bab pertama: HTML &amp; CSS</h3>
-                <p class="tl-text">
-                  Mulai memahami cara halaman web disusun. Output pertama: halaman statis sederhana
-                  dengan style yang masih berantakan — tapi berhasil tampil di browser, dan itu
-                  rasanya seperti membuka pintu.
-                </p>
-              </div>
-            </li>
-
-            <li class="tl-item" data-reveal>
-              <span class="tl-dot" aria-hidden="true"></span>
-              <div class="tl-card">
-                <p class="tl-date">Juni 2026</p>
-                <h3 class="tl-title">JavaScript &amp; Python</h3>
-                <p class="tl-text">
-                  Dua bahasa, dua cara berpikir. JavaScript untuk membuat halaman merespons, Python
-                  untuk melatih logika lewat latihan-latihan kecil. Masih sering buka dokumentasi —
-                  dan itu bagian dari belajarnya.
-                </p>
-              </div>
-            </li>
-
-            <li class="tl-item" data-reveal>
-              <span class="tl-dot" aria-hidden="true"></span>
-              <div class="tl-card">
-                <p class="tl-date">Juli 2026</p>
-                <h3 class="tl-title">Menjelajah ke aplikasi Android</h3>
-                <p class="tl-text">
-                  Langkah besar: dari web ke aplikasi ponsel. Di sini saya bertemu API dan mulai
-                  menyambungkan aplikasi dengan model AI — proyek pertama yang terasa seperti
-                  produk sungguhan.
-                </p>
-              </div>
-            </li>
-
-            <li class="tl-item" data-reveal>
-              <span class="tl-dot" aria-hidden="true"></span>
-              <div class="tl-card">
-                <p class="tl-date">Agustus 2026</p>
-                <h3 class="tl-title">Debut di GitHub Pages</h3>
-                <p class="tl-text">
-                  Situs web pertama yang benar-benar online dan dipakai orang banyak: situs
-                  pemesanan bazar kelas X-4. Pengalaman baru — kode yang saya tulis ternyata
-                  benar-benar dipakai.
-                </p>
-              </div>
-            </li>
-
-            <li class="tl-item" data-reveal>
-              <span class="tl-dot" aria-hidden="true"></span>
-              <div class="tl-card">
-                <p class="tl-date">Sekarang</p>
-                <h3 class="tl-title">Fokus: AI offline &amp; konsistensi</h3>
-                <p class="tl-text">
-                  Sedang mendalami cara menjalankan model AI langsung di perangkat — plus membangun
-                  kebiasaan: kode setiap hari, unggah yang jujur, dan pelajari dari proyek orang
-                  lain.
-                </p>
-              </div>
-            </li>
+            <li class="tl-item" data-reveal><span class="tl-dot"></span><div class="tl-card"><p class="tl-date">Mei 2026</p><h3 class="tl-title">Bab pertama: HTML & CSS</h3><p class="tl-text">Output pertama: halaman statis sederhana dengan style yang masih berantakan — tapi berhasil tampil di browser.</p></div></li>
+            <li class="tl-item" data-reveal><span class="tl-dot"></span><div class="tl-card"><p class="tl-date">Juni 2026</p><h3 class="tl-title">JavaScript & Python</h3><p class="tl-text">Dua bahasa, dua cara berpikir. Masih sering buka dokumentasi — dan itu bagian dari belajarnya.</p></div></li>
+            <li class="tl-item" data-reveal><span class="tl-dot"></span><div class="tl-card"><p class="tl-date">Juli 2026</p><h3 class="tl-title">Menjelajah ke aplikasi Android</h3><p class="tl-text">Dari web ke aplikasi ponsel. Mulai menyambungkan aplikasi dengan model AI — proyek pertama yang terasa seperti produk.</p></div></li>
+            <li class="tl-item" data-reveal><span class="tl-dot"></span><div class="tl-card"><p class="tl-date">Agustus 2026</p><h3 class="tl-title">Debut di GitHub Pages</h3><p class="tl-text">Situs web pertama yang benar-benar online dan dipakai orang banyak: situs pemesanan bazar kelas X-4.</p></div></li>
+            <li class="tl-item" data-reveal><span class="tl-dot"></span><div class="tl-card"><p class="tl-date">Sekarang</p><h3 class="tl-title">Fokus: AI offline & konsistensi</h3><p class="tl-text">Mendalami cara menjalankan model AI langsung di perangkat — plus membangun kebiasaan: kode setiap hari.</p></div></li>
           </ol>
         </div>
       </div>
     </section>
 
-    <!-- ============================= GALLERY ============================= -->
+    <!-- GALLERY -->
     <section class="section section-gallery" id="galeri" aria-labelledby="gallery-title">
       <div class="container">
         <header class="section-head" data-reveal>
-          <p class="section-no">06</p>
-          <h2 class="section-title" id="gallery-title">
-            <span class="stagger">Galeri</span>
-            <span class="stagger outline-word">Karya</span>
-          </h2>
+          <p class="section-no">06 / Galeri</p>
+          <h2 class="section-title" id="gallery-title"><span class="stagger">Galeri</span><span class="stagger">karya.</span></h2>
           <p class="section-lead">Tampilan nyata dari proyek yang sedang dikerjakan. Klik untuk membesarkan.</p>
         </header>
 
-        <div class="gallery-grid" role="list">
-          <button class="gallery-item" data-caption="Inventaris barang — Items Recognition" data-reveal data-cursor="view" data-parallax>
-            <img src="assets/screenshots/gallery-items.svg" alt="Inventaris barang di aplikasi Items Recognition" width="720" height="1600" loading="lazy" decoding="async">
-          </button>
-
-          <button class="gallery-item" data-caption="Form data barang — Items Recognition" data-reveal data-cursor="view" data-parallax>
-            <img src="assets/screenshots/gallery-save.svg" alt="Form penyimpanan data barang" width="720" height="1600" loading="lazy" decoding="async">
-          </button>
-
-          <button class="gallery-item" data-caption="Pencarian visual — Items Recognition" data-reveal data-cursor="view" data-parallax>
-            <img src="assets/screenshots/gallery-search.svg" alt="Pencarian visual dengan ikon kamera" width="720" height="1600" loading="lazy" decoding="async">
-          </button>
-
-          <button class="gallery-item" data-caption="Pengaturan &amp; kunci API — Items Recognition" data-reveal data-cursor="view" data-parallax>
-            <img src="assets/screenshots/gallery-settings.svg" alt="Halaman pengaturan aplikasi" width="720" height="1600" loading="lazy" decoding="async">
-          </button>
-
-          <button class="gallery-item gallery-wide" data-caption="Beranda situs Bazar Jogja X-4" data-reveal data-cursor="view" data-parallax>
-            <img src="assets/screenshots/gallery-bazar.svg" alt="Beranda situs pemesanan Bazar Jogja Kelas X-4" width="1200" height="700" loading="lazy" decoding="async">
-          </button>
-
-          <button class="gallery-item gallery-wide" data-caption="Papan menu &amp; keranjang — Bazar X-4" data-reveal data-cursor="view" data-parallax>
-            <img src="assets/screenshots/gallery-cart.svg" alt="Papan menu dan keranjang pesanan di situs bazar" width="1200" height="700" loading="lazy" decoding="async">
-          </button>
+        <div class="gallery-grid">
+          <button class="gallery-item" data-caption="Inventaris barang — Items Recognition" data-reveal><img src="assets/screenshots/gallery-items.svg" alt="Inventaris barang di aplikasi Items Recognition" width="720" height="1600" loading="lazy"></button>
+          <button class="gallery-item" data-caption="Form data barang — Items Recognition" data-reveal><img src="assets/screenshots/gallery-save.svg" alt="Form penyimpanan data barang" width="720" height="1600" loading="lazy"></button>
+          <button class="gallery-item" data-caption="Pencarian visual — Items Recognition" data-reveal><img src="assets/screenshots/gallery-search.svg" alt="Pencarian visual dengan ikon kamera" width="720" height="1600" loading="lazy"></button>
+          <button class="gallery-item" data-caption="Pengaturan & kunci API — Items Recognition" data-reveal><img src="assets/screenshots/gallery-settings.svg" alt="Halaman pengaturan aplikasi" width="720" height="1600" loading="lazy"></button>
+          <button class="gallery-item gallery-wide" data-caption="Beranda situs Bazar Jogja X-4" data-reveal><img src="assets/screenshots/gallery-bazar.svg" alt="Beranda situs pemesanan Bazar Jogja Kelas X-4" width="1200" height="700" loading="lazy"></button>
+          <button class="gallery-item gallery-wide" data-caption="Papan menu & keranjang — Bazar X-4" data-reveal><img src="assets/screenshots/gallery-cart.svg" alt="Papan menu dan keranjang pesanan di situs bazar" width="1200" height="700" loading="lazy"></button>
         </div>
       </div>
     </section>
 
-    <!-- ============================= CONTACT ============================= -->
+    <!-- CONTACT -->
     <section class="section section-contact" id="kontak" aria-labelledby="contact-title">
       <div class="container">
         <header class="section-head" data-reveal>
-          <p class="section-no">07</p>
-          <h2 class="section-title" id="contact-title">
-            <span class="stagger">Mari</span>
-            <span class="stagger outline-word">Terhubung</span>
-          </h2>
+          <p class="section-no">07 / Kontak</p>
+          <h2 class="section-title" id="contact-title"><span class="stagger">Mari</span><span class="stagger">terhubung.</span></h2>
           <p class="section-lead">Soal kolaborasi, pertanyaan, atau sekadar menyapa — silakan kirim pesan.</p>
         </header>
 
         <div class="contact-grid">
           <div class="contact-primary" data-reveal>
             <h3 class="contact-eyebrow">Balasan tercepat</h3>
-            <a class="btn btn-solid btn-wa" href="https://wa.me/6285727298747" target="_blank" rel="noopener" data-cursor="link">
-              Chat via WhatsApp
-              <span class="btn-arrow" aria-hidden="true">→</span>
-            </a>
-            <p class="contact-note">
-              Tombol di atas langsung membuka percakapan WhatsApp — tanpa perlu menyalin nomor apa pun.
-            </p>
+            <a class="btn btn-solid btn-wa" href="https://wa.me/6285727298747" target="_blank" rel="noopener">Chat via WhatsApp <span>→</span></a>
+            <p class="contact-note">Tombol di atas langsung membuka percakapan WhatsApp — tanpa perlu menyalin nomor.</p>
+            <div class="contact-orb" aria-hidden="true"></div>
           </div>
 
           <ul class="contact-list" role="list">
-            <li data-reveal>
-              <a href="https://wa.me/6285727298747" target="_blank" rel="noopener" data-cursor="link">
-                <span class="c-num">01</span>
-                <span class="c-name">WhatsApp</span>
-                <span class="c-desc">Percakapan langsung</span>
-                <span class="c-arrow" aria-hidden="true">↗</span>
-              </a>
-            </li>
-            <li data-reveal>
-              <a href="mailto:alvianbagus321@gmail.com" data-cursor="link">
-                <span class="c-num">02</span>
-                <span class="c-name">Email</span>
-                <span class="c-desc">alvianbagus321@gmail.com</span>
-                <span class="c-arrow" aria-hidden="true">↗</span>
-              </a>
-            </li>
-            <li data-reveal>
-              <a href="https://github.com/alvianbagus321-stack" target="_blank" rel="noopener" data-cursor="link">
-                <span class="c-num">03</span>
-                <span class="c-name">GitHub</span>
-                <span class="c-desc">github.com/alvianbagus321-stack</span>
-                <span class="c-arrow" aria-hidden="true">↗</span>
-              </a>
-            </li>
-            <li data-reveal>
-              <a href="https://www.tiktok.com/@mozillx" target="_blank" rel="noopener" data-cursor="link">
-                <span class="c-num">04</span>
-                <span class="c-name">TikTok</span>
-                <span class="c-desc">@mozillx</span>
-                <span class="c-arrow" aria-hidden="true">↗</span>
-              </a>
-            </li>
+            <li data-reveal><a href="https://wa.me/6285727298747" target="_blank" rel="noopener"><span class="c-num">01</span><span class="c-name">WhatsApp</span><span class="c-desc">Percakapan langsung</span><span class="c-arrow">↗</span></a></li>
+            <li data-reveal><a href="mailto:alvianbagus321@gmail.com"><span class="c-num">02</span><span class="c-name">Email</span><span class="c-desc">alvianbagus321@gmail.com</span><span class="c-arrow">↗</span></a></li>
+            <li data-reveal><a href="https://github.com/alvianbagus321-stack" target="_blank" rel="noopener"><span class="c-num">03</span><span class="c-name">GitHub</span><span class="c-desc">github.com/alvianbagus321-stack</span><span class="c-arrow">↗</span></a></li>
+            <li data-reveal><a href="https://www.tiktok.com/@mozillx" target="_blank" rel="noopener"><span class="c-num">04</span><span class="c-name">TikTok</span><span class="c-desc">@mozillx</span><span class="c-arrow">↗</span></a></li>
           </ul>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- ============================= FOOTER ============================= -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-top">
         <div class="footer-brand">
-          <a class="brand" href="#top" data-cursor="link">
-            <span class="brand-mark" aria-hidden="true">A</span>
-            <span class="brand-text">
-              <strong>Alvian Bagus</strong>
-              <span>Wijaksono</span>
-            </span>
-          </a>
+          <a class="brand" href="#top"><span class="brand-mark">A</span><span class="brand-text"><strong>Alvian Bagus</strong><span>Wijaksono</span></span></a>
           <p class="footer-tag">Pelajar yang membangun — dan mendokumentasikan prosesnya.</p>
+          <div class="footer-clock">Lamongan · <span id="footerClock">00:00</span> · © 2026</div>
         </div>
-
         <nav class="footer-nav" aria-label="Navigasi cepat">
           <h3>Navigasi</h3>
           <ul>
-            <li><a href="#tentang" data-cursor="link">Tentang</a></li>
-            <li><a href="#skills" data-cursor="link">Skill</a></li>
-            <li><a href="#kode" data-cursor="link">Kode</a></li>
-            <li><a href="#proyek" data-cursor="link">Proyek</a></li>
-            <li><a href="#perjalanan" data-cursor="link">Perjalanan</a></li>
-            <li><a href="#galeri" data-cursor="link">Galeri</a></li>
-            <li><a href="#kontak" data-cursor="link">Kontak</a></li>
+            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="#skills">Skill</a></li>
+            <li><a href="#kode">Kode</a></li>
+            <li><a href="#proyek">Proyek</a></li>
+            <li><a href="#perjalanan">Perjalanan</a></li>
+            <li><a href="#galeri">Galeri</a></li>
+            <li><a href="#kontak">Kontak</a></li>
           </ul>
         </nav>
-
         <nav class="footer-nav" aria-label="Tautan sosial">
           <h3>Sosial</h3>
           <ul>
-            <li><a href="https://github.com/alvianbagus321-stack" target="_blank" rel="noopener" data-cursor="link">GitHub <span aria-hidden="true">↗</span></a></li>
-            <li><a href="https://www.tiktok.com/@mozillx" target="_blank" rel="noopener" data-cursor="link">TikTok <span aria-hidden="true">↗</span></a></li>
-            <li><a href="https://wa.me/6285727298747" target="_blank" rel="noopener" data-cursor="link">WhatsApp <span aria-hidden="true">↗</span></a></li>
-            <li><a href="mailto:alvianbagus321@gmail.com" data-cursor="link">Email <span aria-hidden="true">↗</span></a></li>
+            <li><a href="https://github.com/alvianbagus321-stack" target="_blank" rel="noopener">GitHub ↗</a></li>
+            <li><a href="https://www.tiktok.com/@mozillx" target="_blank" rel="noopener">TikTok ↗</a></li>
+            <li><a href="https://wa.me/6285727298747" target="_blank" rel="noopener">WhatsApp ↗</a></li>
+            <li><a href="mailto:alvianbagus321@gmail.com">Email ↗</a></li>
           </ul>
         </nav>
-
         <div class="footer-status">
           <h3>Status</h3>
-          <p><span class="hero-status" aria-hidden="true"></span> Sedang belajar — setiap hari.</p>
+          <p><span class="hero-status"></span> Sedang belajar — setiap hari.</p>
           <p class="footer-loc">Lamongan, Jawa Timur<br>Indonesia</p>
         </div>
       </div>
-
       <div class="footer-bottom">
-        <p>© 2026 Alvian Bagus Wijaksono</p>
-        <p class="footer-mono">SMA Negeri 1 Babat · X-4</p>
+        <p>© 2026 Alvian Bagus Wijaksono — Dibuat tanpa framework, dengan niat baik.</p>
+        <p class="footer-mono">SMA Negeri 1 Babat · X-4 · <span id="easterHint" style="cursor:pointer;text-decoration:underline dotted">psst: coba ketik "py run game"</span></p>
       </div>
     </div>
   </footer>
 
-  <!-- ============================= LIGHTBOX ============================= -->
   <div class="lightbox" role="dialog" aria-modal="true" aria-label="Pratinjau gambar" hidden>
     <button class="lightbox-close" aria-label="Tutup pratinjau">✕</button>
     <figure class="lightbox-figure">
       <img class="lightbox-img" src="" alt="">
       <figcaption class="lightbox-caption"></figcaption>
     </figure>
+  </div>
+
+  <!-- EASTER EGG GAME -->
+  <div class="game-overlay" id="gameOverlay" hidden>
+    <div class="game-modal" role="dialog" aria-modal="true" aria-label="Snake Game Easter Egg">
+      <div class="game-head">
+        <div class="game-title"><span class="g-dot"></span> SNAKE // easter_egg.exe</div>
+        <div class="game-meta">
+          <span>Score: <b id="gameScore">0</b></span>
+          <span>Best: <b id="gameBest">0</b></span>
+        </div>
+        <button class="game-close" id="gameClose" aria-label="Tutup game">✕</button>
+      </div>
+      <div class="game-canvas-wrap">
+        <canvas id="gameCanvas" width="420" height="420"></canvas>
+        <div class="game-start" id="gameStart">
+          <p class="gs-title">SNAKE</p>
+          <p class="gs-sub">Easter egg ditemukan!</p>
+          <p class="gs-hint">Ketik <code>py run game</code> di editor kode untuk membuka game ini.</p>
+          <button class="btn btn-solid btn-small" id="gameStartBtn">Mulai Main ▶</button>
+          <p class="gs-controls">WASD / Arrow Keys · Space = Restart · P = Pause</p>
+        </div>
+        <div class="game-over" id="gameOver" hidden>
+          <p class="go-title">Game Over</p>
+          <p class="go-score">Score: <span id="gameOverScore">0</span></p>
+          <button class="btn btn-solid btn-small" id="gameRestartBtn">Main Lagi ↻</button>
+        </div>
+      </div>
+      <div class="game-controls">
+        <div class="dpad" aria-hidden="true">
+          <button data-dir="up">▲</button>
+          <div class="dpad-mid"><button data-dir="left">◀</button><button data-dir="down">▼</button><button data-dir="right">▶</button></div>
+        </div>
+        <div class="game-hint">
+          <span>←→↑↓ untuk gerak</span>
+          <span>·</span>
+          <span>ESC untuk keluar</span>
+        </div>
+      </div>
+    </div>
   </div>
 
   <script src="assets/js/main.js" defer></script>
