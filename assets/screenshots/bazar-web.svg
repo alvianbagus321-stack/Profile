@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-label="Pratinjau situs bazar kelas X-4">
+  <rect width="1200" height="700" fill="#071a15"/>
+  <rect x=".5" y=".5" width="1199" height="699" fill="none" stroke="#2a4a3f"/>
+  <rect width="1200" height="76" fill="#0b241d"/>
+  <rect x="0" y="74" width="1200" height="2" fill="#164a3b"/>
+  <text x="48" y="46" font-family="monospace" font-size="20" fill="#d8f0dc">BAZAR X-4</text>
+  <rect x="1010" y="22" width="150" height="36" fill="#176a54"/>
+  <text x="1085" y="46" font-family="monospace" font-size="14" fill="#edf5ef" text-anchor="middle">PESAN ↗</text>
+  <text x="600" y="190" font-family="monospace" font-size="15" fill="#9fc5a9" text-anchor="middle" letter-spacing="6">KAMIS · 13 AGUSTUS 2026 · R.21 · X-4</text>
+  <text x="600" y="300" font-family="serif" font-size="72" font-weight="bold" fill="#edf5ef" text-anchor="middle">Bazar Jogja</text>
+  <text x="600" y="384" font-family="serif" font-size="72" font-weight="bold" fill="#edf5ef" text-anchor="middle">Kelas X-4</text>
+  <text x="600" y="440" font-family="monospace" font-size="17" fill="#9fc5a9" text-anchor="middle">Pilih menu, masukkan keranjang, pesan via WhatsApp.</text>
+  <rect x="430" y="490" width="180" height="52" fill="#176a54"/>
+  <text x="520" y="523" font-family="monospace" font-size="15" fill="#edf5ef" text-anchor="middle">LIHAT MENU ↘</text>
+  <rect x="628" y="490" width="180" height="52" fill="none" stroke="#9fc5a9"/>
+  <text x="718" y="523" font-family="monospace" font-size="15" fill="#d8f0dc" text-anchor="middle">LIHAT POSTER</text>
+  <text x="600" y="640" font-family="monospace" font-size="13" fill="#4d6b5d" text-anchor="middle">08.00–12.00 WIB · STAND R.21 · SMAN 1 BABAT</text>
+</svg>

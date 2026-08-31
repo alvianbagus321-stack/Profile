@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1600" role="img" aria-label="Pratinjau form penyimpanan data barang">
+  <rect width="720" height="1600" fill="#0c0f16"/>
+  <rect x=".5" y=".5" width="719" height="1599" fill="none" stroke="#20263a"/>
+  <rect width="720" height="120" fill="#0b0e15"/>
+  <text x="360" y="74" font-family="monospace" font-size="26" fill="#e8eaf2" text-anchor="middle">Simpan Barang</text>
+  <text x="660" y="74" font-family="monospace" font-size="26" fill="#4d7cff" text-anchor="middle">✕</text>
+  <!-- photo placeholder -->
+  <rect x="40" y="160" width="640" height="300" fill="#11151e" stroke="#20263a"/>
+  <circle cx="360" cy="290" r="34" fill="none" stroke="#4d7cff" stroke-width="3"/>
+  <text x="360" y="302" font-family="monospace" font-size="30" fill="#4d7cff" text-anchor="middle">+</text>
+  <text x="360" y="352" font-family="monospace" font-size="18" fill="#565e73" text-anchor="middle">Foto barang</text>
+  <!-- fields -->
+  <text x="40" y="540" font-family="monospace" font-size="18" fill="#565e73">NAMA BARANG</text>
+  <rect x="40" y="560" width="640" height="84" fill="#11151e" stroke="#20263a"/>
+  <text x="72" y="610" font-family="monospace" font-size="24" fill="#b8bdcc">Buku Tulis A5</text>
+  <text x="40" y="724" font-family="monospace" font-size="18" fill="#565e73">HARGA</text>
+  <rect x="40" y="744" width="640" height="84" fill="#11151e" stroke="#20263a"/>
+  <text x="72" y="794" font-family="monospace" font-size="24" fill="#b8bdcc">8.500</text>
+  <text x="40" y="908" font-family="monospace" font-size="18" fill="#565e73">DESKRIPSI</text>
+  <rect x="40" y="928" width="640" height="180" fill="#11151e" stroke="#20263a"/>
+  <text x="72" y="978" font-family="monospace" font-size="22" fill="#b8bdcc">Buku tulis 38 lembar…</text>
+  <text x="40" y="1188" font-family="monospace" font-size="18" fill="#565e73">GRUP</text>
+  <rect x="40" y="1208" width="640" height="84" fill="#11151e" stroke="#20263a"/>
+  <text x="72" y="1258" font-family="monospace" font-size="24" fill="#b8bdcc">Alat Tulis ▾</text>
+  <!-- save -->
+  <rect x="40" y="1370" width="640" height="96" fill="#4d7cff"/>
+  <text x="360" y="1430" font-family="monospace" font-size="26" fill="#ffffff" text-anchor="middle">SIMPAN DATA</text>
+</svg>

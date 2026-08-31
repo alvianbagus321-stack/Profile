@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-label="Pratinjau antarmuka pengenalan barang">
+  <rect width="1200" height="700" fill="#10141d"/>
+  <rect x=".5" y=".5" width="1199" height="699" fill="none" stroke="#20263a"/>
+  <text x="60" y="70" font-family="monospace" font-size="16" fill="#565e73" letter-spacing="3">ITEMS RECOGNITION</text>
+  <!-- left: photo -->
+  <rect x="60" y="100" width="500" height="500" fill="#0c0f16" stroke="#20263a"/>
+  <rect x="120" y="170" width="180" height="220" fill="#151a26"/>
+  <rect x="330" y="150" width="170" height="250" fill="#181e2c"/>
+  <rect x="140" y="430" width="260" height="120" fill="#121722"/>
+  <g stroke="#4d7cff" stroke-width="2.5" fill="none">
+    <circle cx="310" cy="350" r="120"/>
+    <line x1="310" y1="200" x2="310" y2="500"/>
+    <line x1="160" y1="350" x2="460" y2="350"/>
+  </g>
+  <!-- right: result panel -->
+  <rect x="620" y="100" width="520" height="500" fill="#11151e" stroke="#20263a"/>
+  <rect x="620" y="100" width="520" height="56" fill="#0b0e15"/>
+  <text x="648" y="136" font-family="monospace" font-size="14" fill="#868ea6">HASIL PENGENALAN</text>
+  <circle cx="1108" cy="128" r="5" fill="#5fd68a"/>
+  <text x="660" y="220" font-family="monospace" font-size="15" fill="#565e73">KECOCOKAN TERTINGGI</text>
+  <text x="660" y="276" font-family="monospace" font-size="30" fill="#e8eaf2">Botol Minum</text>
+  <rect x="660" y="308" width="440" height="1" fill="#20263a"/>
+  <text x="660" y="360" font-family="monospace" font-size="15" fill="#565e73">HARGA</text>
+  <text x="660" y="398" font-family="monospace" font-size="22" fill="#e8eaf2">Rp25.000</text>
+  <text x="660" y="460" font-family="monospace" font-size="15" fill="#565e73">DESKRIPSI</text>
+  <text x="660" y="498" font-family="monospace" font-size="17" fill="#b8bdcc">Botol minum 600 ml, tersimpan</text>
+  <text x="660" y="526" font-family="monospace" font-size="17" fill="#b8bdcc">di grup "Peralatan".</text>
+  <rect x="660" y="556" width="200" height="36" fill="none" stroke="#4d7cff"/>
+  <text x="760" y="580" font-family="monospace" font-size="13" fill="#4d7cff" text-anchor="middle">CARI ONLINE ↗</text>
+</svg>

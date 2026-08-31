@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1600" role="img" aria-label="Pratinjau inventaris barang">
+  <rect width="720" height="1600" fill="#0c0f16"/>
+  <rect x=".5" y=".5" width="719" height="1599" fill="none" stroke="#20263a"/>
+  <!-- top bar -->
+  <rect width="720" height="120" fill="#0b0e15"/>
+  <text x="40" y="72" font-family="monospace" font-size="28" fill="#e8eaf2">Inventaris</text>
+  <text x="600" y="72" font-family="monospace" font-size="22" fill="#4d7cff">+</text>
+  <!-- search -->
+  <rect x="40" y="160" width="640" height="80" fill="#11151e" stroke="#20263a"/>
+  <text x="76" y="208" font-family="monospace" font-size="22" fill="#565e73">Cari barang…</text>
+  <rect x="600" y="176" width="64" height="48" fill="none" stroke="#4d7cff"/>
+  <circle cx="632" cy="200" r="10" fill="none" stroke="#4d7cff" stroke-width="3"/>
+  <path d="M646 214 L654 222" stroke="#4d7cff" stroke-width="3"/>
+  <!-- group label -->
+  <text x="40" y="310" font-family="monospace" font-size="20" fill="#565e73" letter-spacing="3">GRUP · ALAT TULIS</text>
+  <!-- cards -->
+  <g>
+    <rect x="40" y="340" width="640" height="180" fill="#10141d" stroke="#20263a"/>
+    <rect x="40" y="340" width="8" height="180" fill="#4d7cff"/>
+    <rect x="76" y="370" width="120" height="120" fill="#161c29"/>
+    <text x="226" y="420" font-family="monospace" font-size="26" fill="#e8eaf2">Pulpen Hitam</text>
+    <text x="226" y="464" font-family="monospace" font-size="20" fill="#868ea6">Rp4.000 · Stok 12</text>
+  </g>
+  <g>
+    <rect x="40" y="552" width="640" height="180" fill="#10141d" stroke="#20263a"/>
+    <rect x="76" y="582" width="120" height="120" fill="#161c29"/>
+    <text x="226" y="632" font-family="monospace" font-size="26" fill="#e8eaf2">Buku Tulis A5</text>
+    <text x="226" y="676" font-family="monospace" font-size="20" fill="#868ea6">Rp8.500 · Stok 7</text>
+  </g>
+  <g>
+    <rect x="40" y="764" width="640" height="180" fill="#10141d" stroke="#20263a"/>
+    <rect x="76" y="794" width="120" height="120" fill="#161c29"/>
+    <text x="226" y="844" font-family="monospace" font-size="26" fill="#e8eaf2">Spidol Papan</text>
+    <text x="226" y="888" font-family="monospace" font-size="20" fill="#868ea6">Rp6.000 · Stok 15</text>
+  </g>
+  <g>
+    <rect x="40" y="976" width="640" height="180" fill="#10141d" stroke="#20263a"/>
+    <rect x="76" y="1006" width="120" height="120" fill="#161c29"/>
+    <text x="226" y="1056" font-family="monospace" font-size="26" fill="#e8eaf2">Penghapus</text>
+    <text x="226" y="1100" font-family="monospace" font-size="20" fill="#868ea6">Rp3.000 · Stok 20</text>
+  </g>
+  <!-- bottom nav -->
+  <rect x="0" y="1480" width="720" height="120" fill="#0b0e15"/>
+  <rect x="0" y="1480" width="720" height="2" fill="#20263a"/>
+  <rect x="120" y="1520" width="24" height="40" fill="#4d7cff"/>
+  <circle cx="360" cy="1540" r="22" fill="none" stroke="#565e73" stroke-width="4"/>
+  <rect x="560" y="1520" width="40" height="40" fill="none" stroke="#565e73" stroke-width="4"/>
+</svg>
