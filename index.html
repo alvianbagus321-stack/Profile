@@ -96,6 +96,7 @@
       <nav class="nav-links" aria-label="Navigasi utama">
         <a href="#tentang" class="nav-item is-active" data-cursor="link">Tentang</a>
         <a href="#skills" class="nav-item" data-cursor="link">Skill</a>
+        <a href="#kode" class="nav-item" data-cursor="link">Kode</a>
         <a href="#proyek" class="nav-item" data-cursor="link">Proyek</a>
         <a href="#perjalanan" class="nav-item" data-cursor="link">Perjalanan</a>
         <a href="#galeri" class="nav-item" data-cursor="link">Galeri</a>
@@ -114,6 +115,7 @@
       <nav class="nav-mobile" aria-label="Navigasi mobile">
         <a href="#tentang" data-cursor="link">Tentang</a>
         <a href="#skills" data-cursor="link">Skill</a>
+        <a href="#kode" data-cursor="link">Kode</a>
         <a href="#proyek" data-cursor="link">Proyek</a>
         <a href="#perjalanan" data-cursor="link">Perjalanan</a>
         <a href="#galeri" data-cursor="link">Galeri</a>
@@ -349,11 +351,55 @@
       </div>
     </section>
 
+    <!-- ============================= PROFILE IN CODE ============================= -->
+    <section class="section section-code" id="kode" aria-labelledby="code-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="section-no">03</p>
+          <h2 class="section-title" id="code-title">
+            <span class="stagger">Profil</span>
+            <span class="stagger outline-word">dalam</span>
+            <span class="stagger">Kode</span>
+          </h2>
+          <p class="section-lead">
+            Siapa saya, ditulis sebagai kode Python. Tekan tombol <em>Run</em> dan lihat hasilnya.
+          </p>
+        </header>
+
+        <div class="code-playground" data-reveal>
+          <div class="code-toolbar">
+            <span class="code-file">profil.py</span>
+            <button class="btn btn-small btn-solid code-run" type="button" data-cursor="link">
+              <span class="play-icon" aria-hidden="true">▶</span>
+              <span class="run-label">Run</span>
+            </button>
+          </div>
+
+          <pre class="code-editor" aria-label="Kode Python profil"><code><span class="py-key">profil</span> = {
+    <span class="py-key">"nama"</span>:      <span class="py-str">"Alvian Bagus Wijaksono"</span>,
+    <span class="py-key">"kelas"</span>:     <span class="py-str">"X-4"</span>,
+    <span class="py-key">"sekolah"</span>:   <span class="py-str">"SMA Negeri 1 Babat"</span>,
+    <span class="py-key">"kontak"</span>:    <span class="py-str">"0857-2729-8747"</span>,
+    <span class="py-key">"hobi"</span>:      <span class="py-str">"membaca"</span>,
+    <span class="py-key">"cita_cita"</span>: <span class="py-str">"web development"</span>,
+}
+
+<span class="py-fn">for</span> kunci, nilai <span class="py-fn">in</span> profil.items():
+    <span class="py-fn">print</span>(f"{kunci}: {nilai}")</code></pre>
+
+          <div class="code-output" aria-live="polite" hidden>
+            <span class="output-label">Output</span>
+            <pre></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ============================= PROJECTS ============================= -->
     <section class="section section-projects" id="proyek" aria-labelledby="projects-title">
       <div class="container">
         <header class="section-head" data-reveal>
-          <p class="section-no">03</p>
+          <p class="section-no">04</p>
           <h2 class="section-title" id="projects-title">
             <span class="stagger">Proyek</span>
             <span class="stagger outline-word">Pilihan</span>
@@ -502,7 +548,7 @@
     <section class="section section-journey" id="perjalanan" aria-labelledby="journey-title">
       <div class="container">
         <header class="section-head" data-reveal>
-          <p class="section-no">04</p>
+          <p class="section-no">05</p>
           <h2 class="section-title" id="journey-title">
             <span class="stagger">Perjalanan</span>
             <span class="stagger outline-word">Belajar</span>
@@ -590,7 +636,7 @@
     <section class="section section-gallery" id="galeri" aria-labelledby="gallery-title">
       <div class="container">
         <header class="section-head" data-reveal>
-          <p class="section-no">05</p>
+          <p class="section-no">06</p>
           <h2 class="section-title" id="gallery-title">
             <span class="stagger">Galeri</span>
             <span class="stagger outline-word">Karya</span>
@@ -630,7 +676,7 @@
     <section class="section section-contact" id="kontak" aria-labelledby="contact-title">
       <div class="container">
         <header class="section-head" data-reveal>
-          <p class="section-no">06</p>
+          <p class="section-no">07</p>
           <h2 class="section-title" id="contact-title">
             <span class="stagger">Mari</span>
             <span class="stagger outline-word">Terhubung</span>
@@ -709,6 +755,7 @@
           <ul>
             <li><a href="#tentang" data-cursor="link">Tentang</a></li>
             <li><a href="#skills" data-cursor="link">Skill</a></li>
+            <li><a href="#kode" data-cursor="link">Kode</a></li>
             <li><a href="#proyek" data-cursor="link">Proyek</a></li>
             <li><a href="#perjalanan" data-cursor="link">Perjalanan</a></li>
             <li><a href="#galeri" data-cursor="link">Galeri</a></li>
