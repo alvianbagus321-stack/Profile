@@ -27,9 +27,13 @@ assets/
 
 ## Fitur
 
-- Dark, minimal, editorial — satu aksen biru, garis &amp; grid tanpa glow berlebihan
-- Hero dengan tagline personal &amp; tipografi interaktif (outline → solid)
+- Dark, editorial — navy berlapis dengan aksen biru → violet → cyan
+- Hero: nama gradient fill, glow ambien, marquee ticker teknologi di bawahnya
+- Animasi scroll sinematik (translate + blur + scale), grid bergerak, 3 blob float, grain halus
+- Tombol magnetik (desktop) &amp; kartu proyek 3D tilt dengan spotlight mengikuti kursor
+- Progress bar gradien, underline nav gradien, kartu ber-shadow &amp; glow
 - Skill dengan level jujur: **Dasar / Menengah / Mahir**
+- Playground "Profil dalam Kode" — Python palsu dengan tombol ▶ Run
 - Proyek nyata dari GitHub (`Ai-code`, `Camera-ai`, `Items-reconigtion-`, `Bazar-X-4-web`)
 - Status **Dalam Pengembangan** untuk proyek yang belum rilis
 - Garis waktu perjalanan belajar, galeri dengan lightbox, kontak langsung ke WhatsApp
