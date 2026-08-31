@@ -449,4 +449,37 @@
       ".project-preview img{width:100%;height:100%;object-fit:cover;}";
     document.head.appendChild(previewStyle);
   }
+
+  /* ---------- Profile-in-code: fake Python playground ---------- */
+  var codeRun = document.querySelector(".code-run");
+  var codeOutput = document.querySelector(".code-output");
+  var codeOutputBody = codeOutput ? codeOutput.querySelector("pre") : null;
+  var codeOutputLines = [
+    "nama: Alvian Bagus Wijaksono",
+    "kelas: X-4",
+    "sekolah: SMA Negeri 1 Babat",
+    "kontak: 0857-2729-8747",
+    "hobi: membaca",
+    "cita_cita: web development"
+  ];
+
+  if (codeRun && codeOutput) {
+    codeRun.addEventListener("click", function () {
+      if (codeRun.classList.contains("is-running")) return;
+      var label = codeRun.querySelector(".run-label");
+      codeRun.classList.add("is-running");
+      if (label) label.textContent = "Running…";
+
+      codeOutput.hidden = false;
+      codeOutput.classList.remove("is-visible");
+      if (codeOutputBody) codeOutputBody.textContent = "";
+
+      setTimeout(function () {
+        if (codeOutputBody) codeOutputBody.textContent = codeOutputLines.join("\n");
+        codeOutput.classList.add("is-visible");
+        codeRun.classList.remove("is-running");
+        if (label) label.textContent = "Run";
+      }, 560);
+    });
+  }
 })();
