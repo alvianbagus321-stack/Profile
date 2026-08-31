@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-label="Ilustrasi antarmuka kamera dengan deteksi AI">
+  <rect width="1200" height="700" fill="#10141d"/>
+  <rect x=".5" y=".5" width="1199" height="699" fill="none" stroke="#20263a"/>
+  <!-- viewfinder scene -->
+  <rect x="120" y="60" width="960" height="580" fill="#0c0f16"/>
+  <g stroke="#242a3a" stroke-width="1">
+    <line x1="120" y1="60" x2="120" y2="640"/>
+    <line x1="1080" y1="60" x2="1080" y2="640"/>
+    <line x1="120" y1="60" x2="1080" y2="60"/>
+    <line x1="120" y1="640" x2="1080" y2="640"/>
+  </g>
+  <!-- shelf / product lines -->
+  <rect x="180" y="300" width="120" height="220" fill="#121722"/>
+  <rect x="340" y="260" width="130" height="260" fill="#141a26"/>
+  <rect x="510" y="330" width="110" height="190" fill="#10151f"/>
+  <rect x="660" y="280" width="150" height="240" fill="#161c29"/>
+  <rect x="850" y="320" width="120" height="200" fill="#111722"/>
+  <!-- scan frame around one product -->
+  <rect x="628" y="248" width="214" height="304" fill="none" stroke="#4d7cff" stroke-width="2.5"/>
+  <path d="M628 272 L628 248 L652 248 M818 248 L842 248 L842 272 M842 528 L842 552 L818 552 M628 552 L628 528 L652 528" fill="none" stroke="#4d7cff" stroke-width="6"/>
+  <!-- label -->
+  <rect x="628" y="522" width="214" height="30" fill="#4d7cff"/>
+  <text x="735" y="542" font-family="monospace" font-size="12" fill="#ffffff" text-anchor="middle">TERDETEKSI</text>
+  <!-- scan line -->
+  <line x1="628" y1="380" x2="842" y2="380" stroke="#4d7cff" stroke-width="2" opacity="0.6">
+    <animate attributeName="y1" values="280;520;280" dur="3.2s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="280;520;280" dur="3.2s" repeatCount="indefinite"/>
+  </line>
+  <!-- hint text -->
+  <text x="600" y="696" font-family="monospace" font-size="12" fill="#565e73" text-anchor="middle">Arahkan kamera ke barang — AI mencari datanya</text>
+</svg>

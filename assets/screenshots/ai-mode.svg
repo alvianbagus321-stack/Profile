@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-label="Pratinjau antarmuka aplikasi chat offline">
+  <rect width="1200" height="700" fill="#10141d"/>
+  <path d="M0 0h1200v700H0z" fill="none"/>
+  <rect x=".5" y=".5" width="1199" height="699" fill="none" stroke="#20263a"/>
+  <!-- window chrome -->
+  <rect width="1200" height="44" fill="#0b0e15"/>
+  <circle cx="26" cy="22" r="5" fill="#242a3a"/>
+  <circle cx="46" cy="22" r="5" fill="#242a3a"/>
+  <rect x="340" y="13" width="520" height="18" rx="9" fill="#161b28"/>
+  <text x="600" y="26" font-family="monospace" font-size="11" fill="#565e73" text-anchor="middle">Ai-code — mode offline</text>
+  <!-- sidebar -->
+  <rect x="0" y="44" width="240" height="656" fill="#0c0f16"/>
+  <rect x="240" y="44" width="1" height="656" fill="#20263a"/>
+  <text x="24" y="88" font-family="monospace" font-size="11" fill="#565e73" letter-spacing="2">CHAT</text>
+  <rect x="14" y="104" width="212" height="42" fill="#11151e"/>
+  <rect x="14" y="104" width="212" height="42" stroke="#4d7cff"/>
+  <text x="28" y="130" font-family="monospace" font-size="12" fill="#e8eaf2">Percakapan baru</text>
+  <rect x="14" y="156" width="212" height="42" fill="none" stroke="#181d2c"/>
+  <text x="28" y="182" font-family="monospace" font-size="12" fill="#565e73">Logika Python…</text>
+  <rect x="14" y="208" width="212" height="42" fill="none" stroke="#181d2c"/>
+  <text x="28" y="234" font-family="monospace" font-size="12" fill="#565e73">Ide proyek web</text>
+  <!-- status strip -->
+  <rect x="14" y="600" width="212" height="52" fill="#0e1118" stroke="#181d2c"/>
+  <circle cx="30" cy="626" r="4" fill="#4d7cff"/>
+  <text x="44" y="622" font-family="monospace" font-size="11" fill="#868ea6">MODEL LOKAL</text>
+  <text x="44" y="638" font-family="monospace" font-size="10" fill="#565e73">offline · siap digunakan</text>
+  <!-- chat area -->
+  <text x="290" y="96" font-family="monospace" font-size="13" fill="#565e73">MODE OFFLINE</text>
+  <rect x="290" y="112" width="14" height="14" fill="#4d7cff"/>
+  <text x="314" y="123" font-family="monospace" font-size="12" fill="#b8bdcc">Model berjalan di perangkat</text>
+  <!-- user bubble -->
+  <rect x="640" y="160" width="510" height="54" fill="#161d33"/>
+  <text x="662" y="192" font-family="monospace" font-size="15" fill="#e8eaf2">Jelaskan cara kerja AI offline.</text>
+  <!-- ai bubble -->
+  <rect x="290" y="244" width="640" height="86" fill="#11151e" stroke="#20263a"/>
+  <rect x="290" y="244" width="4" height="86" fill="#4d7cff"/>
+  <text x="316" y="276" font-family="monospace" font-size="14" fill="#e8eaf2">AI offline menjalankan model langsung di perangkat,</text>
+  <text x="316" y="298" font-family="monospace" font-size="14" fill="#e8eaf2">tanpa koneksi internet. Data tidak keluar dari HP.</text>
+  <!-- input -->
+  <rect x="290" y="600" width="860" height="52" fill="#0e1118" stroke="#20263a"/>
+  <text x="314" y="631" font-family="monospace" font-size="13" fill="#565e73">Tulis pesan…</text>
+  <rect x="1060" y="610" width="76" height="32" fill="#4d7cff"/>
+  <text x="1098" y="631" font-family="monospace" font-size="12" fill="#ffffff" text-anchor="middle">Kirim</text>
+</svg>

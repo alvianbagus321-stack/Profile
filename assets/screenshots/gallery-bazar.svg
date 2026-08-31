@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-label="Pratinjau beranda situs bazar kelas">
+  <rect width="1200" height="700" fill="#071a15"/>
+  <rect x=".5" y=".5" width="1199" height="699" fill="none" stroke="#2a4a3f"/>
+  <!-- nav -->
+  <rect width="1200" height="76" fill="#0b241d"/>
+  <rect x="0" y="74" width="1200" height="2" fill="#164a3b"/>
+  <text x="48" y="46" font-family="monospace" font-size="20" fill="#d8f0dc">BAZAR X-4</text>
+  <text x="800" y="46" font-family="monospace" font-size="14" fill="#9fc5a9">MENU</text>
+  <text x="900" y="46" font-family="monospace" font-size="14" fill="#9fc5a9">INFO</text>
+  <rect x="1010" y="22" width="150" height="36" fill="#176a54"/>
+  <text x="1085" y="46" font-family="monospace" font-size="14" fill="#edf5ef" text-anchor="middle">PESAN ↗</text>
+  <!-- hero -->
+  <text x="600" y="180" font-family="monospace" font-size="16" fill="#9fc5a9" text-anchor="middle" letter-spacing="6">SEMARAK BAZAR JOGJA KELAS X-4</text>
+  <text x="600" y="280" font-family="serif" font-size="76" font-weight="bold" fill="#edf5ef" text-anchor="middle">Jajan ala Jogja,</text>
+  <text x="600" y="366" font-family="serif" font-size="76" font-weight="bold" fill="#edf5ef" text-anchor="middle">mampir ke stan X-4.</text>
+  <rect x="430" y="420" width="180" height="52" fill="#176a54"/>
+  <text x="520" y="453" font-family="monospace" font-size="15" fill="#edf5ef" text-anchor="middle">LIHAT MENU</text>
+  <rect x="628" y="420" width="180" height="52" fill="none" stroke="#9fc5a9"/>
+  <text x="718" y="453" font-family="monospace" font-size="15" fill="#d8f0dc" text-anchor="middle">LIHAT POSTER</text>
+  <!-- food cards -->
+  <g>
+    <rect x="80" y="540" width="320" height="130" fill="#0d251e" stroke="#164a3b"/>
+    <rect x="96" y="556" width="98" height="98" fill="#12332a"/>
+    <text x="220" y="600" font-family="monospace" font-size="18" fill="#edf5ef">Bakmi Ayam</text>
+    <text x="220" y="632" font-family="monospace" font-size="15" fill="#9fc5a9">Rp12.000</text>
+  </g>
+  <g>
+    <rect x="440" y="540" width="320" height="130" fill="#0d251e" stroke="#164a3b"/>
+    <rect x="456" y="556" width="98" height="98" fill="#12332a"/>
+    <text x="580" y="600" font-family="monospace" font-size="18" fill="#edf5ef">Es Kopi Joss Cincau</text>
+    <text x="580" y="632" font-family="monospace" font-size="15" fill="#9fc5a9">Rp5.000</text>
+  </g>
+  <g>
+    <rect x="800" y="540" width="320" height="130" fill="#0d251e" stroke="#164a3b"/>
+    <rect x="816" y="556" width="98" height="98" fill="#12332a"/>
+    <text x="940" y="600" font-family="monospace" font-size="18" fill="#edf5ef">Bakpia Kukus Jogja</text>
+    <text x="940" y="632" font-family="monospace" font-size="15" fill="#9fc5a9">Rp6.000</text>
+  </g>
+</svg>

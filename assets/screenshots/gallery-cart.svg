@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-label="Pratinjau papan menu dan keranjang bazar">
+  <rect width="1200" height="700" fill="#071a15"/>
+  <rect x=".5" y=".5" width="1199" height="699" fill="none" stroke="#2a4a3f"/>
+  <text x="48" y="60" font-family="monospace" font-size="18" fill="#9fc5a9" letter-spacing="4">MENU UTAMA</text>
+  <text x="48" y="100" font-family="serif" font-size="34" font-weight="bold" fill="#edf5ef">Pilih menu favoritmu</text>
+  <!-- menu list -->
+  <rect x="48" y="140" width="700" height="96" fill="#0d251e" stroke="#164a3b"/>
+  <text x="76" y="184" font-family="monospace" font-size="18" fill="#edf5ef">Bakmi Ayam — Rp12.000</text>
+  <text x="76" y="214" font-family="monospace" font-size="13" fill="#9fc5a9">Bakmi jawa gurih dengan ayam cincang</text>
+  <rect x="620" y="168" width="100" height="40" fill="#176a54"/>
+  <text x="670" y="194" font-family="monospace" font-size="14" fill="#edf5ef" text-anchor="middle">+ TAMBAH</text>
+  <rect x="48" y="252" width="700" height="96" fill="#0d251e" stroke="#164a3b"/>
+  <text x="76" y="296" font-family="monospace" font-size="18" fill="#edf5ef">Es Kopi Joss Cincau — Rp5.000</text>
+  <text x="76" y="326" font-family="monospace" font-size="13" fill="#9fc5a9">Kopi dingin, cincau, manis yang pas</text>
+  <rect x="620" y="280" width="100" height="40" fill="#176a54"/>
+  <text x="670" y="306" font-family="monospace" font-size="14" fill="#edf5ef" text-anchor="middle">+ TAMBAH</text>
+  <rect x="48" y="364" width="700" height="96" fill="#0d251e" stroke="#164a3b"/>
+  <text x="76" y="408" font-family="monospace" font-size="18" fill="#edf5ef">Bakpia Kukus Jogja — Rp6.000</text>
+  <text x="76" y="438" font-family="monospace" font-size="13" fill="#9fc5a9">Bakpia kukus lembut khas Jogja</text>
+  <rect x="620" y="392" width="100" height="40" fill="#176a54"/>
+  <text x="670" y="418" font-family="monospace" font-size="14" fill="#edf5ef" text-anchor="middle">+ TAMBAH</text>
+  <rect x="48" y="476" width="700" height="96" fill="#0d251e" stroke="#164a3b"/>
+  <text x="76" y="520" font-family="monospace" font-size="18" fill="#edf5ef">Paket Bakmi + Cincau — Rp17.000</text>
+  <text x="76" y="550" font-family="monospace" font-size="13" fill="#9fc5a9">1 Bakmi Ayam + 1 Es Kopi Joss Cincau</text>
+  <rect x="620" y="504" width="100" height="40" fill="#176a54"/>
+  <text x="670" y="530" font-family="monospace" font-size="14" fill="#edf5ef" text-anchor="middle">+ TAMBAH</text>
+  <!-- cart panel -->
+  <rect x="800" y="140" width="352" height="470" fill="#0d251e" stroke="#2a4a3f"/>
+  <text x="832" y="196" font-family="monospace" font-size="16" fill="#d8f0dc" letter-spacing="3">KERANJANG</text>
+  <rect x="832" y="224" width="288" height="1" fill="#164a3b"/>
+  <text x="832" y="280" font-family="monospace" font-size="16" fill="#edf5ef">Bakmi Ayam</text>
+  <text x="832" y="306" font-family="monospace" font-size="13" fill="#9fc5a9">Rp12.000 × 1</text>
+  <rect x="832" y="340" width="288" height="1" fill="#164a3b"/>
+  <text x="832" y="396" font-family="monospace" font-size="16" fill="#edf5ef">Es Kopi Joss Cincau</text>
+  <text x="832" y="422" font-family="monospace" font-size="13" fill="#9fc5a9">Rp5.000 × 2</text>
+  <rect x="832" y="456" width="288" height="1" fill="#164a3b"/>
+  <text x="832" y="510" font-family="monospace" font-size="14" fill="#d8f0dc">Total</text>
+  <text x="1072" y="510" font-family="monospace" font-size="18" fill="#edf5ef" text-anchor="end">Rp22.000</text>
+  <rect x="832" y="540" width="288" height="48" fill="#176a54"/>
+  <text x="976" y="571" font-family="monospace" font-size="15" fill="#edf5ef" text-anchor="middle">PESAN VIA WHATSAPP ↗</text>
+</svg>
